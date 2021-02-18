@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.base {
+  display: grid;
+  grid-template-areas:
+    "header111 header111 header111"
+    "part21 part22 part23"
+    "part24 part25 part26";
+  text-align: center;
+  grid-gap: 100px;
+  margin: 40px 120px;
+  font-family: Roboto, sans-serif;
+  line-height: 150%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.part1 {
+  grid-area: header111;
+}
+
+.part1-par {
+  padding: 20px 0 0 293px;
+}
+
+.part2-1,
+.part2-2,
+.part2-3,
+.part2-4,
+.part2-5,
+.part2-6 {
+  margin-bottom: 50px;
+  padding: 20px 0 5px 0;
+}
+
+.part2-1 {
+  grid-area: part21;
+  background: url(images/17723498.jpeg) no-repeat center;
+  background-size: contain;
+}
+
+.part2-2 {
+  grid-area: part22;
+  background: url(images/17723506.jpeg) no-repeat center;
+  background-size: contain;
+}
+
+.part2-3 {
+  grid-area: part23;
+  background: url(images/17723515.jpeg) no-repeat center;
+  background-size: contain;
+}
+
+.part2-4 {
+  grid-area: part24;
+  background: url(images/104298756_images_12961758354.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.part2-5 {
+  grid-area: part25;
+  background: url(images/17723526.jpeg) no-repeat center;
+  background-size: contain;
+}
+
+.part2-6 {
+  grid-area: part26;
+  background: url(images/104298534_images_12961749564.jpg) no-repeat center;
+  background-size: contain;
+}
+
+.part2-1-header,
+.part2-2-header,
+.part2-3-header,
+.part2-4-header,
+.part2-5-header,
+.part2-6-header {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .base {
+    margin: 40px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .base {
+    grid-gap: 60px;
+    font-size: 87%;
+  }
+  .part1-par {
+    padding: 20px 0 0 171px;
+  }
+  .part2-1-header,
+  .part2-2-header,
+  .part2-3-header,
+  .part2-4-header,
+  .part2-5-header,
+  .part2-6-header {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .base {
+    grid-gap: 30px;
+    margin: 30px;
+    font-size: 63%;
+  }
+  .part1-par {
+    padding: 20px 0 0 115px;
+  }
+  .part2-1-header,
+  .part2-2-header,
+  .part2-3-header,
+  .part2-4-header,
+  .part2-5-header,
+  .part2-6-header {
+    margin-bottom: 5px;
+  }
+}
